@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Nav styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #194e48;
+    padding: 1.2em 10%;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 300;
+    font-family: Times Comic Sans MS;
+    margin-left: 1em;
+    text-transform: uppercase;
+}
+#nav-logo {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+.fa-bars {
+    display: none;
+}
+
+@media only screen and (max-width: 658px) {
+    .nav-links {
+        display: none;
+    }
+    #nav-logo {
+        height: 50px;
+        width: 50px;
+    }
+    nav {
+        padding: 0.8em 1em;
+    }
+    .fa-bars {
+        display: block;
+        font-size: 32px;
+        color: #fff;
+    }
+}
+/* Banner, Courses and About Section */
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    color: #fff;
+    line-height: 2em;
+    text-align: center;
+}
+.banner .go-up {
+    margin-top: -8em;
+}
+.courses,
+.about {
+    margin: 2em 0;
+}
+.mg-lr {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.flex-sb,
+.flex-sa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+.flex-sa {
+    justify-content: space-around;
+}
+.flex-sb h3 {
+    font-size: 1.7rem;
+}
+.mg-tb {
+    margin-bottom: 1em;
+}
+.hr {
+    width: 100%;
+    height: 2px;
+    background: #000;
+    border: none;
+}
+.col {
+    background: #d6efc7;
+    padding: 1em;
+    border-radius: 5px;
+}
+.col h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+}
+.col p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    font-family: Helvetica;
+}
+.about p {
+    line-height: 1.8em;
+    font-weight: 300;
+    font-family: Helvetica;
+}
+
+@media only screen and (max-width: 658px) {
+    .mg-lr {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .flex-sa {
+        flex-direction: column;
+    }
+}
+
+/* Contact Section */
+.form-wrapper {
+    width: 400px;
+    margin: 0 auto 2em auto;
+    box-shadow: 0 0 4px 0;
+    padding: 1em;
+}
+.form-wrapper form input,
+.form-wrapper form textarea {
+    width: 100%;
+    padding: 12px;
+    display: inline-block;
+    margin: 10px 0;
+}
+.form-wrapper form textarea {
+    height: 100px;
+}
+#contact-form-btn {
+    width: 100%;
+    background: #98ba7d;
+    color: #fff;
+    padding: 10px 0;
+    border: 2px solid #194e48;
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 658px) {
+    .form-wrapper {
+        width: 100%;
+    }
+}
